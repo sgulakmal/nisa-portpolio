@@ -1,0 +1,149 @@
+<head>
+  <title>Lakmal Siyambalage</title>
+  <link rel="icon" type="image/x-icon" href="images/me.png"/>
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="stylesheet" href="mobile.css"/>
+  <link rel="stylesheet" href="./lib//animation/w3.css"/>
+  <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="./lib/bootstrap4.3.1.css"/>
+</head>
+
+<body onload="onLoadPage()" id="body">
+  <div class="mobile_menu_icon flex icon" id="mobile_menu_icon" onclick="openCloseMobileMenu()">
+    <i class="fa fa-bars"></i>
+  </div>
+
+
+  <section class="flex" id="section-1" onmouseenter="selectMenuItem(1)">
+    <div class="text">
+      Hello, I'm <span class="highlight">Nisansala Angammana</span>.
+      <br> I'm a IT undergraduate.
+    </div>
+
+    <div class="button page-link" id="view-my-work" onclick="selectMenuItem(3)">View my work
+      <i class="fa fa-arrow-right"></i>
+    </div>
+  </section>
+  <nav class="desk fixed fixed_mobile_menu" id="menu-nave">
+    <!-- close button for mobile -->
+    <div class="mobile_menu_close_icon flex icon" onclick="openCloseMobileMenu()">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+
+    <div class="link-wrap">
+      <div id="nav-bar-i1" class="active" onclick="selectMenuItem(1)">home</div>
+      <div id="nav-bar-i2" onclick="selectMenuItem(2)">about</div>
+      <div id="nav-bar-i3" onclick="selectMenuItem(3)">portfolio</div>
+      <div id="nav-bar-i4" onclick="selectMenuItem(4)">contact</div>
+    </div>
+  </nav>
+
+  <!-- // section 2 -->
+  <section class="flex notloading" id="section-2" onmouseenter="selectMenuItem(2)">
+    <div class="container flex">
+
+      <div class="header w3-container w3-center w3-animate-left">ABOUT</div>
+      <div class="header-bar w3-container w3-center w3-animate-left"></div>
+
+      <div class="skills-wrapper">
+        <div class="flex w3-container w3-center w3-animate-left">
+          <div class="photo-frame"></div>
+          <div class="label bold">Who's this?</div>
+          <div class="about_me">
+            I'm the IT undergraduate,
+            </a>.
+            <br> I have more than 4 years’ experience in software development of different projects. An engineering
+            background in which ability to quickly attended new work.
+            <br>
+            <span class="highlight" onclick="selectMenuItem(4)">Let's make something special.</span>
+          </div>
+        </div>
+
+        <div class="flex bars-wrap w3-container w3-center w3-animate-right" id="skill-wrap">
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- // section 3 -->
+  <section class="flex notloading" id="section-3" onmouseenter="selectMenuItem(3)">
+    <div class="container flex">
+      <div class="header w3-container w3-center w3-animate-right">PROJECTS</div>
+      <div class="header-bar w3-container w3-center w3-animate-right"></div>
+      <div class="filter-wrap animated fade-in">
+        <div class="flex row">
+          <div class="filter w3-animate-zoom" id="project-type1" onclick="selectProjectCatogory(1)">ALL</div>
+          <div class="filter" id="project-type2" onclick="selectProjectCatogory(2)">Web</div>
+          <div class="filter" id="project-type3" onclick="selectProjectCatogory(3)">Mobile</div>
+          <div class="filter" id="project-type4" onclick="selectProjectCatogory(4)">Deskstop</div>
+        </div>
+
+        <div class="gallery" id="gallery">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- // section 4 -->
+  <section class="flex notloading email" id="section-4" onmouseenter="selectMenuItem(4)">
+    <div class="header w3-container w3-center w3-animate-left">Contact</div>
+    <div class="header-bar w3-container w3-center w3-animate-left"></div>
+    <!-- <div class="compose-box w3-animate-zoom"> -->
+    <!-- <input placeholder="Name" class="input" type="text" id='com-name' />
+      <input placeholder="Email" class="input" type="text" id='com-email' />
+      <textarea placeholder="Message" row="5" class="input" id="com-msg"></textarea> -->
+    </div>
+    <!-- <div class="button page-link" onclick="selectMenuItem(3)">Send -->
+    <!-- </div> -->
+    <div class="contact-link w3-animate-zoom">
+      <div>
+        <span> Voice </span>
+        <a href="tel:+94719876231">(+94)71 9876231</a>
+      </div>
+      <div>
+        <span> Whatsapp </span>
+        <a href="tel:+94719876231">(+94)71 9876231</a>
+      </div>
+      <div>
+        <span> Email </span>
+        <a href="mailto:sgulakmal@gmail.com">sgulakmal@gmail.com</a>
+      </div>
+    </div>
+  </section>
+  <footer class="flex">
+    <i class="button to-top fa fa-arrow-up" onclick="selectMenuItem(1)"></i>
+    <div class="icon-wrap flex row">
+      <a href="https://www.linkedin.com/in/udayanga-lakmal-siyambalage-01647a148/" target="new">
+        <div class="flex icon" id="icon-2">
+          <i class="button fab fa fa-linkedin"></i>
+        </div>
+      </a>
+      <a href="https://www.facebook.com/udayanga.lakmal" target="new">
+        <div class="flex icon" id="icon-3">
+          <i class="button fa fa-facebook-f"></i>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/sgulakmal/" target="new">
+        <div class="flex icon" id="icon-4">
+          <i class="button fa fa-instagram"></i>
+        </div>
+      </a>
+    </div>
+    <div class="info-box">
+      <div class="footnote">MATTHEW WILLIAMS <span class="highlight">©2015</span></div>
+    </div>
+  </footer>
+
+  <canvas id="world" width="100%" height="100%" style="z-index: -1 ">
+    <p class="noCanvas ">You need a <a href="https://www.google.com/chrome ">modern browser</a> to view this.
+    </p>
+  </canvas>
+  <script src="trail.js "></script>
+  <script src="element-handle.js "></script>
+  <script src="project.js "></script>
+  <script src="lib/Jquery/jquery-3.4.1.min.js "></script>
+</body>
