@@ -17,7 +17,7 @@ var projects = [{ name: 'UNDERGRADUATE', discription: 'Bachelor of information a
 
 ]
 
-setProjectToView(1);
+selectProjectCatogory(2);
 
 function selectProjectCatogory(index) {
     if (selectedProjectType === index) {
