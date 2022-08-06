@@ -1,39 +1,27 @@
 var selectSection = 1;
 var skills = [{
         name: 'HTML',
-        level: 80
+        level: 40
     },
     {
-        name: 'CSS',
-        level: 75
+        name: 'HTML',
+        level: 40
     },
     {
-        name: 'javascript',
-        level: 82
-    },
-    {
-        name: 'JQuary',
-        level: 70
-    },
-    {
-        name: 'Node.js',
-        level: 63
-    },
-    {
-        name: 'RxJS',
-        level: 73
-    },
-    {
-        name: 'C#',
-        level: 86
+        name: 'JavaScript',
+        level: 40
     },
     {
         name: 'SQL',
-        level: 58
+        level: 30
     },
     {
-        name: '.net core',
-        level: 55
+        name: 'C',
+        level: 30
+    },
+    {
+        name: 'C#',
+        level: 30
     }
 ]
 
@@ -79,11 +67,11 @@ function selectMenuItem(index) {
     } else {
         document.getElementById('body').classList.remove('details_section');
     }
-    if(!!openMobileMenu) {
+    if (!!openMobileMenu) {
         openCloseMobileMenu();
     }
 
-    
+
 
 
 }
